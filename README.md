@@ -1,2 +1,5 @@
 ### Practice-RE
-- crackme-101
+- CrackMe 101
+- Simple Patcher
+- Shellcode in C
+- PE MiniTool
