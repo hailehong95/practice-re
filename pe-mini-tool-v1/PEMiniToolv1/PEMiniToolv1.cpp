@@ -8,7 +8,7 @@ using namespace std;
 
 void ShowOptions();
 
-int main(int argc, char const *argv[])
+int main(int argc, char const* argv[])
 {
 	HANDLE hFile, hMapObject;
 	LPVOID lpBase;
@@ -193,7 +193,7 @@ int main(int argc, char const *argv[])
 			pImportDescriptor = (PIMAGE_IMPORT_DESCRIPTOR)(dwRawOffset + (dwImportDirectoryVA - pSectionHeader->VirtualAddress));
 
 			//PULONG compare = (PULONG)(HIBYTE(HIWORD(IMAGE_ORDINAL_FLAG32)));
-			
+
 			for (int j = 1; pImportDescriptor->Name != 0; pImportDescriptor++, j++)
 			{
 				DWORD TenDLL = dwRawOffset + (pImportDescriptor->Name - pSectionHeader->VirtualAddress);
